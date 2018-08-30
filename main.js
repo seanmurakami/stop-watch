@@ -45,6 +45,7 @@ function resetNumber(){
   $startButton.textContent = "Start"
   $showReset.classList.toggle("showButton")
   $lapCountNumber.textContent = 0
+  $lapCountNumber.classList.remove('lapButtonClicked')
   clearInterval(IntervalID)
 }
 
