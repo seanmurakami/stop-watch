@@ -1,14 +1,14 @@
-let $startbutton = document.querySelector('button')
-let $changeddigit = document.querySelector('p')
+let $startButton = document.querySelector('button')
+let $changedDigit = document.querySelector('p')
 
 function update() {
-  let countUp = parseInt($changeddigit.textContent, 10)
+  let countUp = parseInt($changedDigit.textContent, 10)
   countUp += 1
-  $changeddigit.textContent = countUp
+  $changedDigit.textContent = countUp
 }
 
 function showNumber() {
   setInterval(update, 1000)
 }
 
-$startbutton.addEventListener('click', showNumber)
+$startButton.addEventListener('click', showNumber)
