@@ -28,4 +28,13 @@ function showNumber() {
   }
 }
 
+function resetNumber(){
+  watchTime = false
+  $changedDigit.textContent = 0
+  $startButton.textContent = "Start"
+  $showReset.classList.toggle("showButton")
+  clearInterval(IntervalID)
+}
+
 $startButton.addEventListener('click', showNumber)
+$showReset.addEventListener('click', resetNumber)
