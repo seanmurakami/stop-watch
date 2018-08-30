@@ -24,6 +24,12 @@ p {
   padding: 1rem 0;
 }
 
+div.setPosition {
+  position: relative;
+  width: 5%;
+  margin: 0 auto;
+}
+
 button {
   background-color: rgb(60, 122, 60);
   border-radius: 0.5rem;
@@ -74,4 +80,11 @@ input {
 
 .addRed {
   color: red;
+}
+
+section {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
 }

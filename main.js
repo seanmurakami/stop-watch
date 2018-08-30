@@ -2,6 +2,7 @@ let $startButton = document.querySelector('#startClock')
 let $changedDigit = document.querySelector('p')
 let $showReset = document.querySelector('.resetClock')
 let $timeInput = document.querySelector('#timeInput')
+let $lapCount = document.querySelector('#lapCount')
 
 let watchTime = false
 let intervalID;
@@ -46,3 +47,4 @@ function resetNumber(){
 
 $startButton.addEventListener('click', showNumber)
 $showReset.addEventListener('click', resetNumber)
+$lapCount.addEventListener('click', function(){})
