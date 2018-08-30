@@ -19,8 +19,10 @@ function showNumber() {
   x = setInterval(update, 1000)
   if (watchTime === true) {
     $startButton.textContent = "Pause"
+    $startButton.classList.toggle("buttonChange")
   } else {
     $startButton.textContent = "Resume"
+    $startButton.classList.toggle("buttonChange")
   }
 }
 
