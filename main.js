@@ -30,7 +30,7 @@ function showNumber() {
   intervalID = setInterval(update, 1000)
   if (watchTime === true) {
     $startButton.textContent = "Pause"
-    $startButton.classList.toggle("buttonChange")
+    $startButton.classList.add("buttonChange")
     $showReset.classList.add("showButton")
   } else {
     $startButton.textContent = "Resume"
@@ -43,6 +43,7 @@ function resetNumber(){
   $changedDigit.textContent = 0
   $changedDigit.classList.remove("addRed")
   $startButton.textContent = "Start"
+  $startButton.classList.remove("buttonChange")
   $showReset.classList.toggle("showButton")
   $lapCountNumber.textContent = 0
   $lapCountNumber.classList.remove('lapButtonClicked')
