@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  color: rgb(60, 122, 60);
+}
+
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+}
+
+h1, p {
+  font-size: 4rem;
+}
+
+h1 {
+  padding-top: 3rem;
+}
+
+p {
+  padding: 1rem 0;
+}
+
+button {
+  background-color: rgb(60, 122, 60);
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(35, 71, 35);
+}
+
+button:active {
+  background-color: rgb(157, 198, 157);
+}
