@@ -41,3 +41,8 @@ button:hover {
 button:active {
   background-color: rgb(157, 198, 157);
 }
+
+.buttonChange {
+  background-color: rgb(98,198,98);
+  color: black;
+}
