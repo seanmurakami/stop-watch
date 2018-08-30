@@ -2,7 +2,9 @@ let $startButton = document.querySelector('#startClock')
 let $changedDigit = document.querySelector('p')
 let $showReset = document.querySelector('.resetClock')
 let $timeInput = document.querySelector('#timeInput')
-let $lapCount = document.querySelector('#lapCount')
+let $lapCount = document.querySelector('.lapCount')
+let $lapCountNumber = document.querySelector('section')
+
 
 let watchTime = false
 let intervalID;
@@ -42,9 +44,15 @@ function resetNumber(){
   $changedDigit.classList.remove("addRed")
   $startButton.textContent = "Start"
   $showReset.classList.toggle("showButton")
+  $lapCountNumber.textContent = 0
   clearInterval(IntervalID)
 }
 
 $startButton.addEventListener('click', showNumber)
 $showReset.addEventListener('click', resetNumber)
-$lapCount.addEventListener('click', function(){})
+$lapCount.addEventListener('click', function(){
+  let x = parseInt($lapCountNumber.textContent,10)
+  x += 1
+  $lapCountNumber.textContent = x
+  $lapCountNumber.classList.add('lapButtonClicked')
+})
