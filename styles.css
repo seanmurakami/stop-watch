@@ -36,6 +36,7 @@ button {
 
 button:hover {
   background-color: rgb(35, 71, 35);
+  cursor: pointer;
 }
 
 button:active {
@@ -45,4 +46,14 @@ button:active {
 .buttonChange {
   background-color: rgb(98,198,98);
   color: black;
+}
+
+div button{
+  display: block;
+  margin: 0 auto;
+}
+
+#resetClock {
+  margin-top: 1rem;
+  display: none;
 }
