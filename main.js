@@ -3,7 +3,7 @@ let watchTime = false
 let $startButton = document.querySelector('#startClock')
 let $changedDigit = document.querySelector('p')
 
-let x;
+let intervalID;
 
 function update() {
   let countUp = parseInt($changedDigit.textContent, 10)
@@ -15,8 +15,8 @@ function update() {
 
 function showNumber() {
   watchTime = !watchTime
-  clearInterval(x)
-  x = setInterval(update, 1000)
+  clearInterval(intervalID)
+  intervalID = setInterval(update, 1000)
   if (watchTime === true) {
     $startButton.textContent = "Pause"
     $startButton.classList.toggle("buttonChange")
