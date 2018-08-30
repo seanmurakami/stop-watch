@@ -13,10 +13,16 @@ function update() {
   countUp += 1
   $changedDigit.textContent = countUp
   }
+  else if (timeLimit === countUp){
+    clearInterval(intervalID)
+    $startButton.textContent = "You're out of time buddy"
+    $changedDigit.classList.add("addRed")
+  }
 }
 
 function showNumber() {
   watchTime = !watchTime
+  $changedDigit.classList.remove("addRed")
   clearInterval(intervalID)
   intervalID = setInterval(update, 1000)
   if (watchTime === true) {
@@ -32,6 +38,7 @@ function showNumber() {
 function resetNumber(){
   watchTime = false
   $changedDigit.textContent = 0
+  $changedDigit.classList.remove("addRed")
   $startButton.textContent = "Start"
   $showReset.classList.toggle("showButton")
   clearInterval(IntervalID)
